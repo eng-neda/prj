@@ -9,7 +9,6 @@ ul,
 li {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
@@ -49,7 +48,6 @@ h6 {
   font-style: normal;
   font-display: block;
 }
-
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -68,6 +66,7 @@ h6 {
 
 .icon-tiktok:before {
   content: "\e900";
+  color: white;
 }
 .icon-x1:before {
   content: "\e901";
@@ -496,6 +495,206 @@ li > .black-box ul li a:hover {
 .album-tablet {
   display: none;
 }
+/* TREND--SECTION */
+.trend {
+  text-align: center;
+}
+.news {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  margin-top: 90px;
+}
+.fation-news {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 150px 70px;
+}
+.fation-news h2 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+}
+.fation-news span {
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 95px;
+}
+.parts {
+  width: 615px;
+
+  display: flex;
+  gap: 40px;
+}
+.parts > li {
+  height: 500px;
+  border: 0.01px solid grey;
+  overflow: hidden;
+  perspective: 500px;
+}
+.parts li:last-child {
+  height: 444px;
+}
+.parts li img {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+  overflow: hidden;
+  border: 0.5px solid gray;
+  transition: 0.5s;
+}
+.parts li:last-child img {
+  width: calc(100%-20px);
+}
+.parts li h4 {
+  padding: 10px 20px;
+  text-align: left;
+}
+.parts li h4 a {
+  font-size: 24px;
+  color: white;
+}
+.parts li > p {
+  color: white;
+  font-size: 16px;
+  text-align: left;
+  padding: 5px 20px;
+  line-height: 2em;
+}
+.parts li img:hover {
+  transform: translateZ(-50px);
+}
+.end-box {
+  width: 285px;
+  height: 63px;
+  display: flex;
+  border: 0.5px solid gray;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.end-box-right {
+  width: 45%;
+  text-align: left;
+  padding: 10px;
+}
+.end-box-right span {
+  font-size: 11px;
+  color: white;
+}
+.end-box-left {
+  width: 55%;
+}
+.up {
+  width: 100%;
+  height: 60%;
+  padding: 5px;
+  text-align: center;
+  background-color: #4ca9b4;
+}
+.up a {
+  color: white;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+.end-box-right:hover {
+  border: 0.5px solid white;
+}
+.end-box-left:hover .up {
+  background-color: #121213;
+  border: 0.5px solid white;
+}
+/* testimonials */
+.testimonials {
+  width: 50%;
+  height: 900px;
+  padding: 50px;
+  background-image: url(picture/testimonials_bg1.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials h3 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 10px;
+}
+.testimonials span {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 100px;
+}
+.testimonials img {
+  border-radius: 50%;
+}
+.testimonials i {
+  font-size: 18px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  line-height: 2em;
+}
+/* CONECT--US */
+.conect-us {
+  width: 100%;
+  height: 320px;
+  background: url(picture/get_in_touch_bg.jpg) no-repeat center center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.cover span {
+  padding: 20px;
+}
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 156px;
+  padding: 70px 50px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+footer > span {
+  font-size: 12px;
+}
+footer > span > a {
+  color: white;
+}
+footer span a:hover {
+  color: #4ca9b4;
+}
+.add {
+  display: flex;
+}
+.add > ul {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+.add > ul > li {
+  text-align: center;
+  width: 40px;
+  height: 20px;
+  font-size: 20px;
+}
+.add > ul > li:hover {
+  background-color: #000000;
+}
 @media (max-width: 1220px) {
   /* LAPTOP */
   /* HEADER */
@@ -763,6 +962,9 @@ li > .black-box ul li a:hover {
   .button span a {
     font-size: 14px;
   }
+  .welcome h2 {
+    text-align: center;
+  }
   /*  SECOND WELCOME  */
   .second-welcome {
     height: 650px;
@@ -775,6 +977,9 @@ li > .black-box ul li a:hover {
   }
   .cover p {
     margin-bottom: 10px;
+  }
+  .cover h3 {
+    text-align: center;
   }
   .right {
     width: 100%;
@@ -927,6 +1132,9 @@ li > .black-box ul li a:hover {
   }
   .button span a {
     font-size: 12px;
+  }
+  .cover h3 {
+    text-align: center;
   }
   /* POSTER */
   .poster {
