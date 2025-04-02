@@ -563,7 +563,7 @@ li > .black-box ul li a:hover {
   line-height: 2em;
 }
 .parts li img:hover {
-  transform: translateZ(-50px);
+  transform: scale(1.1);
 }
 .end-box {
   width: 285px;
