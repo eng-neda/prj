@@ -851,7 +851,7 @@ footer span a:hover {
     position: absolute;
     top: 100%;
     left: 0%;
-    transform: translate(3%, -350%);
+    transform: translate(2%, -350%);
     z-index: 1;
   }
   .album-pic-laptop li span a {
@@ -882,7 +882,7 @@ footer span a:hover {
     padding-top: 20px;
   }
   .album-pic-laptop li:hover img {
-    transform: translate(0, -15%);
+    transform: translate(0, -14%);
   }
   .album-pic-laptop li:hover .big2 {
     transform: translate(0, -7%);
@@ -951,25 +951,15 @@ footer span a:hover {
     font-size: 39px;
     margin-bottom: 6px;
   }
+  .testimonials span {
+    margin-bottom: 50px;
+  }
   /* CONECT--US */
   .conect-us {
-    width: 100%;
     height: 350px;
-    background: url(picture/get_in_touch_bg.jpg) no-repeat center center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
   }
   .cover {
-    width: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 30px 50px;
   }
   .cover h3 {
@@ -980,24 +970,17 @@ footer span a:hover {
     letter-spacing: 4px;
     padding: 30px;
   }
+  /* footer */
   footer {
-    width: 100%;
-    height: 160px;
-    padding: 70px 30px;
-    color: white;
+    padding: 50px 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  .add {
-    width: 100%;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 20px;
+    align-items: center;
+    gap: 20px;
   }
 }
-@media (max-width: 628px) {
+@media (max-width: 768px) {
   /* TABLET */
   /* HEADER*/
   .logo {
@@ -1050,7 +1033,7 @@ footer span a:hover {
   }
   /* HERO tablet */
   .main h1 {
-    font-size: 108px;
+    font-size: 105px;
     text-align: center;
   }
   .main h2 {
@@ -1060,6 +1043,7 @@ footer span a:hover {
     font-size: 14px;
   }
   .welcome h2 {
+    font-size: 32px;
     text-align: center;
   }
   /*  SECOND WELCOME  */
@@ -1070,16 +1054,20 @@ footer span a:hover {
   }
   .cover {
     width: 100%;
-    height: 50%;
+    height: 55%;
+    padding: 10px 15px;
   }
   .cover p {
-    margin-bottom: 10px;
+    margin: 10px;
+    font-size: 16px;
   }
   .cover h3 {
     text-align: center;
+    font-size: 32px;
   }
   .cover span {
     text-align: center;
+    padding: 10px;
   }
   .right {
     width: 100%;
@@ -1148,7 +1136,7 @@ footer span a:hover {
     position: absolute;
     top: 100%;
     left: 0%;
-    transform: translate(3%, -412%);
+    transform: translate(2%, -412%);
     z-index: 1;
   }
   .album-pic-tablet li span a {
@@ -1179,10 +1167,10 @@ footer span a:hover {
     padding-top: 20px;
   }
   .album-pic-tablet li:hover img {
-    transform: translate(0, -15%);
+    transform: translate(0, -11%);
   }
   .album-pic-tablet li:hover .big3 {
-    transform: translate(0, -7%);
+    transform: translate(0, -5%);
     transition: 0.5s;
   }
   li > .black-box3 ul li a:hover {
@@ -1224,14 +1212,18 @@ footer span a:hover {
   }
   /* TREND */
   .trend {
-    width: 500px;
-    height: 250px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .trend > img {
-    width: 90%;
+    width: 95%;
+  }
+  /* FATION--NEWS */
+  .fation-news h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
   }
   .parts {
     width: 90%;
@@ -1243,7 +1235,42 @@ footer span a:hover {
     width: 100%;
     height: 500px;
   }
+  /* Testimonials */
+  .testimonials {
+    width: 100%;
+    height: 590px;
+    padding: 15px;
+  }
+  .testimonials h3 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .testimonials span {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+  .testimonials i {
+    font-size: 16px;
+  }
+  /* CONECT--US */
+  .conect-us {
+    height: 350px;
+  }
+  .conect-us > .cover {
+    gap: 25px;
+    padding: 10px;
+  }
+  .conect-us > .cover h3 {
+    font-size: 32px;
+    padding-bottom: 15px;
+  }
+  .conect-us > .cover span a {
+    padding: 10px;
+  }
   /* footer */
+  footer {
+    gap: 15px;
+  }
   footer > span {
     text-align: center;
   }
@@ -1261,6 +1288,18 @@ footer span a:hover {
   .button span a {
     font-size: 12px;
   }
+  /* SECOND--WELCOME */
+  .second-welcome {
+    height: 1000px;
+  }
+  .second-welcome .cover {
+    height: 45%;
+    margin-bottom: 50px;
+  }
+  .right {
+    height: 50%;
+    padding: 2px;
+  }
   /*BLUE SECTION*/
   .cover h3 {
     text-align: center;
@@ -1276,32 +1315,33 @@ footer span a:hover {
   }
   .inner-poster {
     width: 100%;
+    height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1px;
+    padding: 20px 10px;
   }
   .box1 {
     width: 90%;
-    height: 50%;
+    height: 45%;
     color: white;
-    padding: 8px;
+    padding: 5px;
     border: 8px solid white;
   }
   .box1 h3 {
     width: 100%;
     font-size: 18px;
-    padding: 10px;
+    padding: 5px;
   }
   .box2 {
     width: 100%;
-    height: 30px;
-    padding: 50px 30px;
+    height: 25px;
+    padding: 40px 30px;
   }
   .box2 a {
-    font-size: 18px;
-    padding: 10px;
+    font-size: 14px;
+    padding: 8px;
   }
   /* welcome */
   .second-welcome {
@@ -1326,11 +1366,15 @@ footer span a:hover {
   }
   /* TREND */
   .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
   .trend {
     width: 350px;
     margin: 20px;
+  }
+  .trend img {
+    width: 280px;
+    margin: 10px 20px;
   }
 }
