@@ -126,7 +126,7 @@ h6 {
 .menu ul {
   display: flex;
   align-content: space-around;
-  gap: 85px;
+  gap: 20%;
 }
 .menu a {
   color: white;
@@ -815,7 +815,7 @@ footer span a:hover {
   .small-box a {
     font-size: 14px;
     position: absolute;
-    transform: translate(5%, -10%);
+    transform: translate(1%, -10%);
   }
   /* TALENT PICTURE */
   .talent-picture {
@@ -904,10 +904,10 @@ footer span a:hover {
     padding-top: 20px;
   }
   .album-pic-laptop li:hover img {
-    transform: translate(0, -14%);
+    transform: translate(0, -10%);
   }
   .album-pic-laptop li:hover .big2 {
-    transform: translate(0, -7%);
+    transform: translate(0, -5%);
     transition: 0.5s;
   }
   li > .black-box2 ul li a:hover {
